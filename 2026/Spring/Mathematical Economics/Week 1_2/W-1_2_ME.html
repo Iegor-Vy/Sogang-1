@@ -1,22 +1,37 @@
----
-title: "Mathematical Methods for International Commerce "
-subtitle: "<br/>Week 1/2: Basic Algebra"
-author: "Iegor Vyshnevskyi, Ph.D."
-institute: "Sogang University"
-date: "March 5, 2026"
-output:
-  xaringan::moon_reader:
-    #css: $$default, metropolis, metropolis-fonts$$
-    css: xaringan-themer.css
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: '16:9'
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mathematical Methods for International Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2026-03-05" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Mathematical Methods for International Commerce
+]
+.subtitle[
+## <br/>Week 1/2: Basic Algebra
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### March 5, 2026
+]
+
 ---
 
-<style>
+
+&lt;style&gt;
 @media print{
   body, html, .remark-slides-area, .remark-notes-area {
     height: 100% !important;
@@ -24,57 +39,33 @@ output:
     overflow: visible;
     display: inline-block;
     }
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .remark-slide-content {
     font-size: 34px;
     padding: 1em 4em 1em 4em;
 }
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .my-one-page-font {
   font-size: 28px;
 }
-</style>
+&lt;/style&gt;
 
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .my-one-page-font-table {
   font-size: 24px;
 }
-</style>
+&lt;/style&gt;
 
 
-```{r setup, include = FALSE}
-library(tidyverse)
-library(knitr)
 
-opts_chunk$set(fig.width = 10, 
-               message = FALSE, 
-               warning = FALSE,
-               echo = FALSE)
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-#install.packages("xaringanthemer")
-library(xaringanthemer)
-style_mono_accent(
-  base_color = "#1c5253",
-  header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Montserrat", "500", "550i"),
-  code_font_google   = google_font("Fira Mono"),
-  colors = c(
-  red = "#f34213",
-  purple = "#3e2f5b",
-  orange = "#ff8811",
-  green = "#136f63",
-  white = "#FFFFFF"
-)
-)
-```
+
 
 
 Hello everyone!
@@ -190,7 +181,7 @@ $$
 
 Example:
 
-* $ER = 1.10$ means **1 euro buys 1.10 dollars** in EURO/USD exchange rate.
+* `\(ER = 1.10\)` means **1 euro buys 1.10 dollars** in EURO/USD exchange rate.
 
 
 Conversion rule:
@@ -272,7 +263,7 @@ $$
 
 This is a **linear function**.
 
-Negative slope (i.e., $-0.05$) means depreciation over time.
+Negative slope (i.e., `\(-0.05\)`) means depreciation over time.
 
 ---
 
@@ -437,7 +428,7 @@ Several groups with 3-4 students each.
 
 * A firm borrows $800,000.
 * Initial exchange rate: ER = 1.25 USD/EUR
-* After 2 years, the exchange rate follows: $ER(t) = 1.25 − 0.10t$
+* After 2 years, the exchange rate follows: `\(ER(t) = 1.25 − 0.10t\)`
 
 * Tasks:
   - Compute initial debt in euros
@@ -452,7 +443,7 @@ Several groups with 3-4 students each.
 
 ---
 
-# Group Assignment 2: Inequality & Risk
+# Group Assignment 2: Inequality &amp; Risk
 
 Same groups as before.
 
@@ -489,9 +480,9 @@ T = P + rP
 $$  
 
 Where:  
-- $T$ = Total repayment  
-- $P$ = Principal loan amount  
-- $r$ = Interest rate  
+- `\(T\)` = Total repayment  
+- `\(P\)` = Principal loan amount  
+- `\(r\)` = Interest rate  
 
 ---
 
@@ -533,10 +524,10 @@ C = (D + F)(1 + r)
 $$  
 
 Where:  
-- $C$ = Cost of the contract  
-- $D$ = Debt in euros  
-- $F$ = Fixed fee for hedging. Assumed to be financed by the bank (incl. in loan).  
-- $r$ = Interest rate 
+- `\(C\)` = Cost of the contract  
+- `\(D\)` = Debt in euros  
+- `\(F\)` = Fixed fee for hedging. Assumed to be financed by the bank (incl. in loan).  
+- `\(r\)` = Interest rate 
 
 .tiny[Hedging contract is a financial agreement to reduce risk from exchange rate fluctuations.]
 
@@ -580,15 +571,15 @@ $$
 
 **This expanded formula helps in accurately calculating the total cost, including fees and interest.**  
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .smaller-font {
   font-size: 18px;
 }
-</style>
+&lt;/style&gt;
 
-<div class="smaller-font">
+&lt;div class="smaller-font"&gt;
 Note: hedging contract includes forward contract (F) to lock in exchange rate.
-</div>
+&lt;/div&gt;
 
 ## Practice: Please calculate the total cost when the debt is D = 1,000,000, fee is F = 50,000, and interest rate is r = 0.05.
 
@@ -616,7 +607,7 @@ $$
 
 ---
 
-# Fractions in Loan Payments & Risk Calculation 
+# Fractions in Loan Payments &amp; Risk Calculation 
 ## Quarterly Loan Payments 
 
 If a **$1,000,000 loan** is split into **quarterly payments**, each payment is calculated as:  
@@ -641,7 +632,7 @@ $$
 **Each quarterly payment costs €227,273 at an exchange rate of 1.10.**  
 
 ---
-# Fractions in Loan Payments & Risk Calculation (cont)
+# Fractions in Loan Payments &amp; Risk Calculation (cont)
 
 ## Impact of Exchange Rate Drop 
 
@@ -660,7 +651,7 @@ $$
 **Now, each quarterly payment costs €238,095.**  
 
 ---
-# Fractions in Loan Payments & Risk Calculation (cont)
+# Fractions in Loan Payments &amp; Risk Calculation (cont)
 
 ## Increase in Payment Due to Exchange Rate Change
 
@@ -676,7 +667,7 @@ $$
 
 ---
 
-# Fractions in Loan Payments & Risk Calculation (cont)
+# Fractions in Loan Payments &amp; Risk Calculation (cont)
 
 ## Multiplying Fractions – Adjusting Loan Payments  
 
@@ -738,10 +729,10 @@ The following symbols are used in **risk management** and **financial decision-m
 
 | Symbol | Meaning | Example |
 |--------|---------|---------|
-| $$<$$ | Less than | Profit $ < 100,000 $ (profit is below €100K) |
-| $$>$$ | Greater than | Revenue $ > 500,000 $ (revenue exceeds €500K) |
-| $$\leq$$ | Less than or equal to | Risk score $$\leq 70$$ (acceptable risk level) |
-| $$\geq$$ | Greater than or equal to | Capital reserves $$\geq 1,000,000$$ (must maintain reserves of €1M or more) |
+| `$$&lt;$$` | Less than | Profit $ &lt; 100,000 $ (profit is below €100K) |
+| `$$&gt;$$` | Greater than | Revenue $ &gt; 500,000 $ (revenue exceeds €500K) |
+| `$$\leq$$` | Less than or equal to | Risk score `$$\leq 70$$` (acceptable risk level) |
+| `$$\geq$$` | Greater than or equal to | Capital reserves `$$\geq 1,000,000$$` (must maintain reserves of €1M or more) |
 
 ---
 
@@ -758,9 +749,9 @@ R - C \geq 900,000
 $$  
 
 Where:  
-- $R$ = Annual revenue  
+- `\(R\)` = Annual revenue  
 - $C $ = Annual costs  
-- $900,000$ = Minimum revenue required to avoid risk  
+- `\(900,000\)` = Minimum revenue required to avoid risk  
 
 ---
 # Linear Inequalities in Risk Management (cont)
@@ -795,8 +786,8 @@ The inequality $$ R \geq 1,050,000 $$ can be visualized on a number line:
 
 $$
 \begin{array}{ccccccccccc}
-{\color{red} \bullet} & {\color{red} \bullet} & {\color{red} \bullet} & {\color{red} \bullet} & {\color{black} |} & {\color{green} \bullet} & {\color{green} \bullet} & {\color{green} \bullet} & {\color{green} \bullet} & {\color{green} \bullet} & \cdots \\
-\cdots & \mathit{900K} & \mathit{950K} & \mathit{1M} &  \mathbf{1.05M} & \mathit{1.1M} & \mathit{1.2M} & \mathit{1.3M} & \cdots \\
+{\color{red} \bullet} &amp; {\color{red} \bullet} &amp; {\color{red} \bullet} &amp; {\color{red} \bullet} &amp; {\color{black} |} &amp; {\color{green} \bullet} &amp; {\color{green} \bullet} &amp; {\color{green} \bullet} &amp; {\color{green} \bullet} &amp; {\color{green} \bullet} &amp; \cdots \\
+\cdots &amp; \mathit{900K} &amp; \mathit{950K} &amp; \mathit{1M} &amp;  \mathbf{1.05M} &amp; \mathit{1.1M} &amp; \mathit{1.2M} &amp; \mathit{1.3M} &amp; \cdots \\
 \end{array}
 $$
 
@@ -868,3 +859,140 @@ getwd()
 setwd("C:\\Users\\vyshn\\OneDrive - kdis.ac.kr\\Documents\\GitHub\\Sogang\\2026\\Spring\\Mathematical Economics\\Week 1_2")
 
 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
