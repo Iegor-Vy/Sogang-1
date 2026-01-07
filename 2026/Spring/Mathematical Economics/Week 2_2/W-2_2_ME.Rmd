@@ -3,7 +3,7 @@ title: "Mathematical Methods for International Commerce "
 subtitle: "<br/>Week 2/2: Supply and Demand Analysis, Transposition of Formulae, National Income Determination"
 author: "Iegor Vyshnevskyi, Ph.D."
 institute: "Sogang University"
-date: "March 12, 2025"
+date: "March 12, 2026"
 output:
   xaringan::moon_reader:
     #css: [default, metropolis, metropolis-fonts]
@@ -47,6 +47,9 @@ output:
 }
 </style>
 
+<style>
+.tiny { font-size: 60%; }      /* class you can reuse anywhere */
+</style>
 
 ```{r setup, include = FALSE}
 library(tidyverse)

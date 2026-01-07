@@ -62,6 +62,9 @@ class: center, middle, inverse, title-slide
 }
 &lt;/style&gt;
 
+&lt;style&gt;
+.tiny { font-size: 60%; }      /* class you can reuse anywhere */
+&lt;/style&gt;
 
 
 
@@ -95,24 +98,30 @@ class: inverse, center, middle
 ---
 
 # Geometric sequence and finite sum
-Sequence: `\(a, ar, ar^2,\dots\)`
+* Sequence: `\(a, ar, ar^2,\dots\)`
 
-Finite sum:
-`\(S_n = a\frac{1-r^n}{1-r}\)` $for `\(r\neq 1\)`
+* Finite sum:
+`\(S_n = a\frac{1-r^n}{1-r}\)` for `\(r\neq 1\)`
 
-Quick example: `\(5+10+20+40 = 75\)`
+* Quick example: `\(5+10+20+40 = 75\)`
+
+.tiny[Here, `\(a=5, r=2, n=4\)`]
+
 ---
 
 # Future value of regular savings (ordinary annuity)
 
-Assume deposit at end of each year:
+* Assume deposit at end of each year:
 
 `\(FV = PMT\cdot\frac{(1+r)^n-1}{r}\)`
 
-Example: `\(PMT=100,\ r=0.05,\ n=5\)`
-Factor: `\((\frac{(1.05)^5-1}{0.05} \approx 5.526)\)`
+* Example: `\(PMT=100,\ r=0.05,\ n=5\)`
+
+* Factor: `\((\frac{(1.05)^5-1}{0.05} \approx 5.526)\)`
 
 `\(FV \approx 552.56\)`
+
+.tiny[PMT = payment each period, r = interest rate, n = number of periods]
 ---
 
 # Common pitfall: “saved” vs “balance”
@@ -121,53 +130,65 @@ Factor: `\((\frac{(1.05)^5-1}{0.05} \approx 5.526)\)`
 
 * Balance is larger because interest is earned
   - Vocabulary: “accumulated balance” not “saved amount”
+
+.tiny[It is common mistake to confuse total contributions with accumulated balance, just remember that interest earned increases the total balance over time.]
 ---
 # Present value of an annuity (loan instalments)
 
-If you repay x each year for n years:
+* If you repay `\(x\)` each year for `\(n\)` years:
 `\(PV = x\cdot\frac{1-(1+r)^{-n}}{r}\)`
 
-Negative exponent means discounting:
+* Negative exponent means discounting:
 `\((1+r)^{-n}=1/(1+r)^n\)`
+
+.tiny[This formula calculates the present value of a series of future payments, taking into account the time value of money through discounting (r is a discount rate (opportunity cost of capital)).]
 ---
 
 # Loan example
 
-Loan PV = 2000, r = 10%, n = 4
+* Loan `\(PV = 2000, r = 10%, n = 4\)`
 
-Factor: `\((\frac{1-(1.10)^{-4}}{0.10} \approx 3.1699)\)`
+* Factor: `\((\frac{1-(1.10)^{-4}}{0.10} \approx 3.1699)\)`
 
 `\((x = 2000/3.1699 \approx 631.3)\)`
+
+.tiny[So, the annual instalment to repay the loan is approximately $631.30.]
 
 ---
 
 # Present value: discrete vs continuous
 
-Discrete: `\(PV=\frac{A}{(1+r)^n}\)`
+* Discrete: `\(PV=\frac{A}{(1+r)^n}\)`
 
-Continuous: `\(PV=Ae^{-rt}\)`
+* Continuous: `\(PV=Ae^{-rt}\)`
 
-Example: 1000 in 3 years at 6%
-Discrete `\(\approx 839.62\)`
-Continuous `\(\approx 835.27\)`
+* Example: 1000 in 3 years at 6%
+  - Discrete `\(\approx 839.62\)`
+  - Continuous `\(\approx 835.27\)`
 
+.tiny[Continuous discounting assumes that interest is compounded continuously, leading to a slightly lower present value compared to discrete compounding.]
 ---
 # NPV (project appraisal)
 
 `\(NPV=-C_0+\sum_{t=1}^{n}\frac{C_t}{(1+r)^t}\)`
 
-Example: cost 2000, return 800 for 3 years, r=10%
+* Example: cost 2000, return 800 for 3 years, r=10%
 
 NPV `\(\approx -10.52\)` (slightly negative)
 
+.tiny[NPV is Net Present Value. Since the NPV is negative, the project is not financially viable at a 10% discount rate.]
+---
 # Bond pricing intuition
-Bond value = PV(coupons) + PV(face value)
 
-If coupon rate = yield, price = face value
+* Bond value = PV(coupons) + PV(face value)
 
-Example: 50 for 10 years + 1000 at end, r=5%
+* If coupon rate = yield, price = face value
 
-Price = 1000
+* Example: 50 for 10 years + 1000 at end, r=5%
+
+* Price = 1000
+
+.tiny[Bond is a financial instrument that pays periodic interest (coupons) and returns the principal (face value) at maturity. When the coupon rate equals the market yield, the bond sells at its face value.]
 ---
 # What you must be ready to do in class
 
@@ -178,6 +199,26 @@ Price = 1000
 * Compute PV/NPV with correct discounting
 
 * Explain results in words (what changes PV/NPV and why)
+---
+
+# Self check questions
+
+1. Find the sum of: `\(3 + 6 + 12 + 24 + 48\)`
+
+2. Find the final Savings Plan amount for $200/year, 4% interest, 10 years
+
+3. A loan of $5000 is repaid in 5 annual instalments at 8%. Find the annual instalment.
+
+Report via Cyber Campus by the class start.
+
+---
+
+class: inverse, center, middle
+
+## PART 2. In-Class Presentation Slides
+
+# Indices and Logarithms, Exponential and Natural Log Functions
+
 ---
 
 # Why This Topic Matters
@@ -244,10 +285,12 @@ Annual deposit: $100, interest = 5%, duration = 5 years
 It means that each year, you save $100 and earn 5% interest.
 
 $$
-S_5 = 100 \cdot \frac{1.05^5 - 1}{0.05} \approx 100 \cdot 5.526 = \boxed{\$552.60}
+S_5 = 100 \cdot \frac{1.05^5 - 1}{0.05} \approx 100 \cdot 5.5256 = \boxed{\$552.56}
 $$
 
-In 5 years, you will have saved $552.60.
+In 5 years, you will have saved $552.56.
+
+tiny[Assume deposits are made at the end of each year. It's ordinary annuity.]
 
 ---
 
@@ -281,7 +324,7 @@ $$
 x = 2000 \cdot \frac{0.4641}{0.10} \approx 928.20
 $$
 
-Good job: it's a wrong answer!
+This result is incorrect—here is the fix.
 
 ---
 
@@ -339,10 +382,10 @@ $$
 Now solve:
 
 $$
-2000 = x \cdot 3.170 \Rightarrow x = \frac{2000}{3.170} \approx \boxed{631.23}
+2000 = x \cdot 3.170 \Rightarrow x = \frac{2000}{3.170} \approx \boxed{631.30}
 $$
 
-So your **annual repayment** is **$631.23**.
+So your **annual repayment** is **$631.30**.
 
 ---
 
@@ -390,7 +433,7 @@ $$
 - `\(1000\)` in 3 years at 6%:
 
 $$
-PV = 1000 \cdot e^{-0.18} \approx 836.00
+PV = 1000 \cdot e^{-0.18} \approx 835.27
 $$
 
 ### What's the difference between discrete and continuous?
@@ -415,7 +458,7 @@ $$
 NPV \approx -2000 + \frac{800}{1.10} + \frac{800}{1.10^2} + \frac{800}{1.10^3} \approx 75.13
 $$
 
-Good job - this answer is wrong!
+This result is incorrect—here is the fix.
 
 ---
 
@@ -441,7 +484,7 @@ $$
 - $1000/year for 5 years at 6%:
 
 $$
-PV = 1000 \cdot \frac{1 - (1.06)^{-5}}{0.06} \approx 4212.40
+PV = 1000 \cdot \frac{1 - (1.06)^{-5}}{0.06} \approx 4212.36
 $$
 
 ---
@@ -470,7 +513,7 @@ $$
 PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx 925.81
 $$
 
-Good job - this answer is wrong!
+This result is incorrect—here is the fix.
 
 ---
 

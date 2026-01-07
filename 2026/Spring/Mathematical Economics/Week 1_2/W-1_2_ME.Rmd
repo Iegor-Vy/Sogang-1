@@ -47,6 +47,9 @@ output:
 }
 </style>
 
+<style>
+.tiny { font-size: 60%; }      /* class you can reuse anywhere */
+</style>
 
 ```{r setup, include = FALSE}
 library(tidyverse)
