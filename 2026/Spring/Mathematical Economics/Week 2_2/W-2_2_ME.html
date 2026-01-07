@@ -90,7 +90,8 @@ Before class:
 * Rewatch the worked examples and pause to redo steps
 
 * Bring one question to class
-  In class: we will solve additional problems in groups
+
+* In class: we will solve additional problems in groups
 ---
 
 # What we cover today
@@ -107,10 +108,10 @@ Before class:
 
 # Function notation + endogenous/exogenous
 
-* Function notation: (y = f(x))
-  * Example demand: (Q_d = f(P) = 100 - 5P)
+* Function notation: `\(y = f(x)\)`
+  * Example demand: `\(Q_d = f(P) = 100 - 5P\)`
 
-* Endogenous: determined inside the model (e.g., (P^*, Q^*, Y^*))
+* Endogenous: determined inside the model (e.g., `\(P^*, Q^*, Y^*\)`)
 
 * Exogenous: taken as given (parameters, policy variables, shocks)
 
@@ -118,36 +119,38 @@ Before class:
 
 # Linear demand and supply
 
-* Demand: (Q_d = a - bP) with (b&gt;0)
+* Demand: `\(Q_d = a - bP\)` with `\(b&gt;0\)`
 
-* Supply: (Q_s = c + dP) with (d&gt;0)
+* Supply: `\(Q_s = c + dP\)` with `\(d&gt;0\)`
 
 * Economic meaning: demand slopes down, supply slopes up
 ---
 
 # Market equilibrium (core method)
 
-* Equilibrium condition: (Q_d = Q_s)
+* Equilibrium condition: `\(Q_d = Q_s\)`
 
-* Example: (100 - 5P = 20 + 3P)
-* Solve: (P^* = 10)
-* Then (Q^* = 50)
+* Example: `\(100 - 5P = 20 + 3P\)`
+* Solve: `\(P^* = 10\)`
+* Then `\(Q^* = 50\)`
 ---
 
 # Two-commodity equilibrium: idea
 
 * Two goods → two markets → two equilibrium conditions
 
-* You solve a system of linear equations to get (P_1^*, P_2^*)
+* You solve a system of linear equations to get `\(P_1^*, P_2^*\)`
 
 * Key skill: put equations into standard form and use elimination/substitution
 
-# Two-commodity example (compact)
+### Two-commodity example (short version)
+
+ Demand:
 From equilibrium you get a system like:
 
 $$
 `\begin{aligned}
--5P_1 + P_2 &amp;= -60 \
+-5P_1 + P_2 &amp;= -60 \\
 -P_1 - 5P_2 &amp;= -55
 \end{aligned}`
 $$
@@ -162,26 +165,32 @@ Eliminate one variable → solve the other → back-substitute
 
 * Used constantly in economics: solve for price, income, multipliers, time, elasticities
 
-# Transposition example 1: solve for price
-From demand: (Q_d = a - bP)
-Solve for (P):
+### Transposition example 1: solve for price
+* From demand: `\(Q_d = a - bP\)`
+
+* Solve for `\(P\)`:
+
 $$
 P = \frac{a - Q_d}{b}
 $$
-Example: (Q_d = 100 - 5P \Rightarrow P = \frac{100 - Q_d}{5})
+
+* Example: `\(Q_d = 100 - 5P \Rightarrow P = \frac{100 - Q_d}{5}\)`
 ---
 
 # Transposition example 2: solve for time
-Compound interest: (A = P(1+r)^t)
+* Compound interest: `\(A = P(1+r)^t\)`
 $$
 t = \frac{\ln(A/P)}{\ln(1+r)}
 $$
-Interpretation: time needed to reach (A) given (r)
+* Interpretation: time needed to reach (A) given (r)
+
+* Because `\(x^y = z\)`  implies  `\(y = \log_x(z) = \ln(z)/\ln(x)\)`
 ---
 
 # National income determination
-Model: `\(Y = C + I + G\)`
-Given: `\(G=40,\ I=55,\ C = 0.8Y_d + 25,\ T=0.1Y+10,\ Y_d=Y-T\)`
+
+* Model: `\(Y = C + I + G\)`
+* Given: `\(G=40,\ I=55,\ C = 0.8Y_d + 25,\ T=0.1Y+10,\ Y_d=Y-T\)`
 
 Step 1: `\(Y_d = Y-(0.1Y+10)=0.9Y-10\)`
 
@@ -206,15 +215,13 @@ In class you will:
 
 Can I:
 
-* set (Q_d = Q_s) and solve?
-* identify endogenous vs exogenous?
-* rearrange to isolate a variable?
-* substitute (Y_d = Y-T) correctly and solve for (Y^*)?
+* set `\(Q_d = Q_s\)` and solve? How?
+* identify endogenous vs exogenous? How?
+* rearrange to isolate a variable? How?
+* solve a 2x2 system by elimination? How?
+* substitute `\(Y_d = Y-T\)` correctly and solve for `\(Y^*\)`? How?
 
 Answer via Cyber Campus before class!
-
----
-
 
 ---
 
@@ -276,8 +283,8 @@ y = f(x)
 $$
 
 where:
-- \( x \) is the **independent variable** (e.g., price, income).
-- \( y \) is the **dependent variable** (e.g., quantity demanded, total revenue).
+- `\(x\)` is the **independent variable** (e.g., price, income).
+- `\(y\)` is the **dependent variable** (e.g., quantity demanded, total revenue).
 
 Note: **Functions** describe **relationships** between variables.
 
@@ -309,7 +316,7 @@ Q_s = 20 + 3P
 $$
 
 Here:
-- **\( P \)** (price) and **\( Q \)** (quantity) are **endogenous**.
+- `\(P\)` (price) and `\(Q\)` (quantity) are **endogenous**.
 - **Shocks like taxes or subsidies** are **exogenous**.
 
 ---
@@ -324,8 +331,8 @@ Q_d = a - bP
 $$
 
 where:
-- \( a \) is the **intercept** (max demand at price = 0).
-- \( b \) is the **slope** (rate at which demand falls when price rises).
+- `\(a\)` is the **intercept** (max demand at price = 0).
+- `\(b\)` is the **slope** (rate at which demand falls when price rises).
 
 ???
 ![](W-2_2_ME_files/figure-html/demand_plot-1.png)&lt;!-- --&gt;
@@ -354,8 +361,8 @@ Q_s = c + dP
 $$
 
 where:
-- \( c \) is the **intercept** (minimum quantity supplied at zero price).
-- \( d \) is the **slope** (rate at which supply increases as price rises).
+- `\(c\)` is the **intercept** (minimum quantity supplied at zero price).
+- `\(d\)` is the **slope** (rate at which supply increases as price rises).
 
 ### **Example Supply Function**
 $$
@@ -467,6 +474,8 @@ $$
 $$
 Q_s = -10 + 3P
 $$
+
+Interpret supply as zero until price is high enough that `\(Q_s \geq 0\)`.
 
 1. **Find the equilibrium price** `\(P^*\)` and **quantity** `\(Q^*\)`.
 2. **Plot the demand and supply functions**.
@@ -597,9 +606,9 @@ $$
 
 # **Final Answer**
 
-\[
+$$
 \boxed{ P_1^* = 13.65, \quad P_2^* = 8.27 }
-\]
+$$
 
 **These are the equilibrium prices where demand equals supply**.
 
@@ -682,7 +691,7 @@ $$
 ---
 
 # **Instructions**
-- **Rearrange equations** into standard form \( Ax + By = C \).
+- **Rearrange equations** into standard form `\(Ax + By = C\)`.
 
 - **Use elimination or substitution** to solve.
 
@@ -708,7 +717,7 @@ Example:
 $$
 A = B + C
 $$
-To express \( C \) in terms of \( A \) and \( B \):
+To express `\(C\)` in terms of `\(A\)` and `\(B\)`:
 
 $$
 C = A - B
@@ -724,13 +733,13 @@ $$
 Q_d = a - bP
 $$
 
-We want to solve for \( P \):
+We want to solve for `\(P\)`:
 
 $$
 P = \frac{a - Q_d}{b}
 $$
 
-If `\(Q_d = 100 - 5P\)`, solve for \( P \):
+If `\(Q_d = 100 - 5P\)`, solve for `\(P\)`:
 
 $$
 P = \frac{100 - Q_d}{5}
@@ -748,9 +757,9 @@ $$
 A = P(1 + r)^t
 $$
 
-Solve for \( t \):
+Solve for `\(t\)`:
 
-1. Divide both sides by \( P \):
+1. Divide both sides by `\(P\)`:
 
 $$
 \frac{A}{P} = (1 + r)^t
@@ -762,7 +771,7 @@ $$
 \ln \left(\frac{A}{P} \right) = t \ln (1 + r)
 $$
 
-3. Solve for \( t \):
+3. Solve for `\(t\)`:
 
 $$
 t = \frac{\ln(A/P)}{\ln(1 + r)}
@@ -786,10 +795,10 @@ class: inverse, center, middle
 - **Measures economic activity** and **standard of living**.
 
 - **Components of National Income**:
-  - **Consumption (C)**: Spending by households.
-  - **Investment (I)**: Spending by firms.
-  - **Government Spending (G)**: Public expenditure.
-  - **Net Exports (NX)**: Exports minus imports.
+  - **Consumption `\(C\)`**: Spending by households.
+  - **Investment `\(I\)`**: Spending by firms.
+  - **Government Spending `\(G\)`**: Public expenditure.
+  - **Net Exports `\(NX\)`**: Exports minus imports.
 
 - **National Income Formula**:
 $$
@@ -807,14 +816,14 @@ C = C_0 + cY
 $$
 
 where:
-- \( C \) = Total consumption
-- \(C_0) = Autonomous consumption (spending even if income is zero)
-- \( c \) = Marginal propensity to consume (MPC) (i.e., how much of each extra unit of income is consumed)
-- \( Y \) = National income
+- `\(C\)` = Total consumption
+- `\(C_0\)` = Autonomous consumption (spending even if income is zero)
+- `\(c\)` = Marginal propensity to consume (MPC) (i.e., how much of each extra unit of income is consumed)
+- `\(Y\)` = National income
 
 **Interpretation:**  
 - If **income increases**, **consumption increases**.  
-- The slope \( c \) tells us **how much of each extra unit of income is consumed**.
+- The slope `\(c\)` tells us **how much of each extra unit of income is consumed**.
 
 ---
 
@@ -840,10 +849,10 @@ S = S_0 + sY
 $$
 
 where:
-- \( S \) = **Total savings**
-- \(S_0) = **Autonomous savings** (can be negative if dissaving occurs)
-- \( s \) = **Marginal propensity to save (MPS)** (i.e., how much of each extra unit of income is saved)
-- \( Y \) = **National income**
+- `\(S\)` = **Total savings**
+- `\(S_0\)` = **Autonomous savings** (can be negative if dissaving occurs)
+- `\(s\)` = **Marginal propensity to save (MPS)** (i.e., how much of each extra unit of income is saved)
+- `\(Y\)` = **National income**
 
 Since **income is either spent or saved**, we know:
 
@@ -879,10 +888,10 @@ Y = C + I + G + (X - M)
 $$
 
 where:
-- \( C \) = **Consumption**
-- \( I \) = **Investment**
-- \( G \) = **Government spending**
-- \( X - M \) = **Net exports** (ignored for a closed economy)
+- `\(C\)` = **Consumption**
+- `\(I\)` = **Investment**
+- `\(G\)` = **Government spending**
+- `\(X - M\)` = **Net exports** (ignored for a closed economy)
 
 At **equilibrium**, income equals total spending:
 
@@ -897,6 +906,9 @@ Y^* = \frac{C_0 + I + G}{1 - c}
 $$
 
 **Higher MPC leads to a higher equilibrium national income**.
+
+This simplified multiplier formula assumes no taxes; with taxes we must substitute `\(Y_d\)` and solve.
+
 
 ---
 
@@ -953,7 +965,7 @@ $$
 C = 0.72Y + 17
 $$
 
-**Consumption increases with national income \( Y \)**.
+**Consumption increases with national income `\(Y\)`**.
 
 ---
 
@@ -974,7 +986,7 @@ $$
 Y = 0.72Y + 112
 $$
 
-**Now solve for \( Y \)**.
+**Now solve for `\(Y\)`**.
 
 ---
 
@@ -1023,14 +1035,14 @@ Find the **equilibrium level of national income** `\(Y^*\)`.
 
 # Next Steps
 
-1. Practice **problems from the textbook** (Jacques 10ed, Sections 1.5-1.7). 
+1. Practice **problems from the textbook** (Jacques's 10ed, Sections 1.5-1.7). 
 
 2. Bring any questions to our **next class discussion!**  
 
-3. Work on your Home Assignment #1 (due next Friday, 13:30pm).
+3. Work on your Home Assignment #1 (due next Friday, March 20, 13:30).
   - Chapter 1.1: Exercise 1.1, Problems 12, 14-16, 19 (p. 21-22)
   - Chapter 1.2: Exercise 1.2, Problems 9, 11, 14 (p. 39)
-  - Chapter 1.3: Exercise 1.3, Problems 10 and (p. 53-54)
+  - Chapter 1.3: Exercise 1.3, Problems 10 (p. 53-54)
   - Chapter 1.4: Exercise 1.4, Problem 4 (p. 65)
   - Chapter 1.5: Exercise 1.5, Problems 3, 5, 8  (p. 81)
   - Chapter 1.6: Exercise 1.6, Problem 5 (p. 92)
@@ -1048,7 +1060,7 @@ class: inverse, center, middle
 
 # Next Class
 
-- (Mar 19) Quadratic Functions (2.1), Revenue, Cost, and Profit (2.2)  
+- (Mar 17) Quadratic Functions (2.1), Revenue, Cost, and Profit (2.2)  
 
 
 
@@ -1074,7 +1086,7 @@ install.packages("renderthis")
 remotes::install_github('rstudio/chromote')
 library(renderthis)
 
-renderthis::to_pdf("W2_2_ME.html")
+renderthis::to_pdf("W-2_2_ME.html")
 
 getwd()
 setwd("C:\\Users\\vyshn\\OneDrive - kdis.ac.kr\\Documents\\GitHub\\Sogang\\2026\\Spring\\Mathematical Economics\\Week 2_2")

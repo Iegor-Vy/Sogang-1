@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mathematical Methods for International Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2026-03-26" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Mathematical Methods for International Commerce
+]
+.subtitle[
+## <br/>Week 4/2: Geometric Series and Investment Appraisal
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### March 26, 2026
+]
+
+---
+
+
+&lt;style&gt;
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 34px;
+    padding: 1em 4em 1em 4em;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font {
+  font-size: 28px;
+}
+&lt;/style&gt;
+
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font-table {
+  font-size: 24px;
+}
+&lt;/style&gt;
+
+
+
+
+
+
+Hello everyone!
+
+I hope you all are doing well and ready for yet another **exciting session** of Mathematical Methods for International Commerce.
+
+---
+
+class: inverse, center, middle
+
+## PART 1. Flipped Classroom – Pre-Class Video 2 Slides
+
+# Week 4/2: Geometric Series and Investment Appraisal
+
+---
+
+# Why it matters (time value of money)
+
+* Regular payments are geometric series
+
+* Compounding grows money forward `\(FV\)`
+
+* Discounting brings money back to today `\(PV\)`
+
+* Finance decisions: loans, projects, bonds
+  - Key idea: a dollar today is worth more than a dollar tomorrow
+
+---
+
+# Geometric sequence and finite sum
+Sequence: `\(a, ar, ar^2,\dots\)`
+
+Finite sum:
+`\(S_n = a\frac{1-r^n}{1-r}\)` $for `\(r\neq 1\)`
+
+Quick example: `\(5+10+20+40 = 75\)`
+---
+
+# Future value of regular savings (ordinary annuity)
+
+Assume deposit at end of each year:
+
+`\(FV = PMT\cdot\frac{(1+r)^n-1}{r}\)`
+
+Example: `\(PMT=100,\ r=0.05,\ n=5\)`
+Factor: `\((\frac{(1.05)^5-1}{0.05} \approx 5.526)\)`
+
+`\(FV \approx 552.56\)`
+---
+
+# Common pitfall: “saved” vs “balance”
+
+* Total contributions: `\(100\times 5 = 500\)`
+
+* Balance is larger because interest is earned
+  - Vocabulary: “accumulated balance” not “saved amount”
+---
+# Present value of an annuity (loan instalments)
+
+If you repay x each year for n years:
+`\(PV = x\cdot\frac{1-(1+r)^{-n}}{r}\)`
+
+Negative exponent means discounting:
+`\((1+r)^{-n}=1/(1+r)^n\)`
+---
+
+# Loan example
+
+Loan PV = 2000, r = 10%, n = 4
+
+Factor: `\((\frac{1-(1.10)^{-4}}{0.10} \approx 3.1699)\)`
+
+`\((x = 2000/3.1699 \approx 631.3)\)`
+
+---
+
+# Present value: discrete vs continuous
+
+Discrete: `\(PV=\frac{A}{(1+r)^n}\)`
+
+Continuous: `\(PV=Ae^{-rt}\)`
+
+Example: 1000 in 3 years at 6%
+Discrete `\(\approx 839.62\)`
+Continuous `\(\approx 835.27\)`
+
+---
+# NPV (project appraisal)
+
+`\(NPV=-C_0+\sum_{t=1}^{n}\frac{C_t}{(1+r)^t}\)`
+
+Example: cost 2000, return 800 for 3 years, r=10%
+
+NPV `\(\approx -10.52\)` (slightly negative)
+
+# Bond pricing intuition
+Bond value = PV(coupons) + PV(face value)
+
+If coupon rate = yield, price = face value
+
+Example: 50 for 10 years + 1000 at end, r=5%
+
+Price = 1000
+---
+# What you must be ready to do in class
+
+* Compute FV of savings plan (and state timing assumption)
+
+* Compute instalment x from PV annuity formula
+
+* Compute PV/NPV with correct discounting
+
+* Explain results in words (what changes PV/NPV and why)
+---
+
+# Why This Topic Matters
+
+Understanding **geometric series** and **investment appraisal** is crucial in economics and finance:
+
+- **Geometric series** model regular payments, compounding, and amortization schedules
+
+- **Investment appraisal** tools help evaluate project viability, return potential, and loan value
+
+- Core to decisions in **banking, government budgeting, business strategy, and personal finance**
+
+- Equips you to analyze time-based value of money, compare alternatives, and manage risk
+
+&gt; “A dollar today is worth more than a dollar tomorrow — let’s understand why.”
+
+---
+
+class: inverse, center, middle
+
+# Section 3.3: Geometric Series
+
+---
+
+## What is a Geometric Progression?
+
+A **geometric sequence** has the form:
+
+$$
+a, ar, ar^2, ar^3, \dots
+$$
+
+Where:
+- `\(a\)` = first term
+- `\(r\)` = common ratio (can be fraction or negative)
+
+Basically, each term is the previous term multiplied by the common ratio.
+
+## Example: `\(2, 4, 8, 16, 32\)`
+
+`\(a = 2, r = 2\)`
+
+---
+
+## Sum of a Finite Geometric Series
+
+$$
+S_n = a \cdot \frac{1 - r^n}{1 - r}, \quad r \ne 1
+$$
+
+- Example: `\(5 + 10 + 20 + 40\)`  
+`\(a = 5, r = 2, n = 4\)`
+
+$$
+S_4 = 5 \cdot \frac{1 - 2^4}{1 - 2} = 5 \cdot \frac{-15}{-1} = 75
+$$
+
+---
+
+## Example: Regular Savings Plan
+
+Annual deposit: $100, interest = 5%, duration = 5 years
+
+It means that each year, you save $100 and earn 5% interest.
+
+$$
+S_5 = 100 \cdot \frac{1.05^5 - 1}{0.05} \approx 100 \cdot 5.526 = \boxed{\$552.60}
+$$
+
+In 5 years, you will have saved $552.60.
+
+---
+
+## Your turn! Calculate the Sum
+
+- Find the sum of the following geometric series:
+
+$$
+2 + 4 + 8 + 16 + 32
+$$
+
+$$
+3 + 6 + 12 + 24 + 48
+$$
+
+- Find the final Savings Plan amount for $200/year, 4% interest, 10 years
+
+---
+
+## Example: Loan Repayment by Instalments
+
+Loan = $2000, repaid in 4 annual instalments at 10%
+
+$$
+x \cdot \left( \frac{1 - (1.10)^{-4}}{0.10} \right) = 2000
+$$
+
+Solve for `\(x\)` to find equal annual instalments.
+
+$$
+x = 2000 \cdot \frac{0.4641}{0.10} \approx 928.20
+$$
+
+Good job: it's a wrong answer!
+
+---
+
+class: my-one-page-font
+
+## Example: Loan Repayment by Instalments (continued)
+
+### Correct Calculation
+
+We use the **Present Value of an Ordinary Annuity** formula:
+
+$$
+PV = x \cdot \frac{1 - (1 + r)^{-n}}{r}
+$$
+
+PS: we have `\(-n\)` power because we are calculating the present value of future payments.
+
+$$
+(1 + r)^{-n} = \frac{1}{(1 + r)^n}
+$$
+
+This tells us:
+
+- **Raising to a negative power** means **discounting** — calculating the **present value** of a future amount.
+- It reflects how **$1 received in the future is worth less today**.
+
+
+#### Substitute known values:
+- `\(PV = 2000\)`
+- `\(r = 0.10\)`
+- `\(n = 4\)`
+
+---
+
+# Step-by-Step Solution
+
+**Step 1:** Plug values into the formula:
+
+$$
+2000 = x \cdot \frac{1 - (1.10)^{-4}}{0.10}
+$$
+
+$$
+(1.10)^{-4} = \frac{1}{1.4641} \approx 0.6830
+$$
+
+$$
+\Rightarrow \frac{1 - 0.6830}{0.10} = \frac{0.3170}{0.10} = 3.170
+$$
+
+---
+
+# Step 2: Solve for `\(x\)`
+
+Now solve:
+
+$$
+2000 = x \cdot 3.170 \Rightarrow x = \frac{2000}{3.170} \approx \boxed{631.23}
+$$
+
+So your **annual repayment** is **$631.23**.
+
+---
+
+## Your turn! Calculate the Instalments
+
+- A loan of $5000 is repaid in 5 annual instalments at 8%. Find the annual instalment.
+
+
+- A loan of $3000 is repaid in 3 annual instalments at 6%. Find the annual instalment.
+
+---
+
+class: inverse, center, middle
+
+# Section 3.4: Investment Appraisal
+
+---
+
+## Investment Appraisal
+
+Stands for evaluating the financial viability of investments.
+
+## Present Value (Discrete)
+
+- Present value `\(PV\)` is the current value of future cash flows.
+
+$$
+PV = \frac{A}{(1 + r)^n}
+$$
+
+- `\(1000\)` in 3 years at 6%:
+
+$$
+PV = \frac{1000}{1.06^3} \approx 839.62
+$$
+
+---
+
+## Present Value (Continuous)
+
+$$
+PV = A \cdot e^{-rt}
+$$
+
+- `\(1000\)` in 3 years at 6%:
+
+$$
+PV = 1000 \cdot e^{-0.18} \approx 836.00
+$$
+
+### What's the difference between discrete and continuous?
+
+- **Discrete**: Values occur at specific intervals (e.g., yearly, monthly).  
+  Example: Annual interest compounding.
+
+- **Continuous**: Values change smoothly over time, modeled using exponential functions.  
+  Example: Continuous compounding of interest.
+
+---
+
+## Net Present Value (NPV)
+
+- Net present value `\(NPV\)` is the sum of present values of cash flows.
+
+`\(NPV = -C_0 + \sum_{t=1}^n \frac{C_t}{(1 + r)^t}\)`
+
+- Example: Cost = $2000, Returns = $800/year for 3 years, `\(r = 10\%\)`:
+
+$$
+NPV \approx -2000 + \frac{800}{1.10} + \frac{800}{1.10^2} + \frac{800}{1.10^3} \approx 75.13
+$$
+
+Good job - this answer is wrong!
+
+---
+
+# Correct Calculation
+
+$$
+= -2000 + 727.27 + 661.16 + 601.06 = \boxed{-10.51}
+$$
+
+So, the project has a **negative NPV** of about **–$10.51**, meaning **it's not financially viable** at a 10% discount rate.
+
+
+---
+
+## Present Value of an Annuity
+
+- Annuity is a series of equal payments over time.
+
+$$
+PV = PMT \cdot \frac{1 - (1 + r)^{-n}}{r}
+$$
+
+- $1000/year for 5 years at 6%:
+
+$$
+PV = 1000 \cdot \frac{1 - (1.06)^{-5}}{0.06} \approx 4212.40
+$$
+
+---
+
+## Internal Rate of Return (IRR)
+
+- IRR is the rate at which NPV = 0.
+
+- We calculate IRR to compare investment options.
+
+Find `\(r\)` such that `\(NPV = 0\)`:
+
+$$
+0 = -C_0 + \sum \frac{C_t}{(1 + r)^t}
+$$
+
+Solve numerically or using software.
+
+---
+
+## Present Value of Government Bonds
+
+Bond pays $50/year for 10 years, plus $1000 at end.
+
+$$
+PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx 925.81
+$$
+
+Good job - this answer is wrong!
+
+---
+
+## Correct Calculation
+
+$$
+PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx \boxed{1000}
+$$
+
+This makes sense: at a 5% rate, the bond is worth **its face value**.
+
+---
+
+# Practice Problems
+
+1. Sum of: `\(3 + 6 + 12 + 24\)`
+
+2. $200/quarter, 4% quarterly compounding for 3 years
+
+3. PV of $1500 in 2 years at 8% (continuous)
+
+4. NPV: $3000 cost, $1200/year for 3 years, 7% rate
+
+5. PV of $500 annuity for 6 years at 5%
+
+6. IRR: $2000 cost, $500/year for 5 years
+
+---
+
+# Summary
+
+- Geometric series = finance modeling
+
+- Investment tools = PV, NPV, IRR
+
+- Practical for decision-making in public/private sectors
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+## Thank you for your attention!
+
+---
+
+# Next Class
+
+- (March 31) The Derivative of Functions (4.1), Rules of Differentiation (4.2) 
+
+# Next Friday (April 2) - Quiz #1
+
+- Please review your Home Work #1, in-class problems and problems from the textbook. 
+
+
+???
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W-4_2_ME.html")
+
+getwd()
+setwd("C:\\Users\\vyshn\\OneDrive - kdis.ac.kr\\Documents\\GitHub\\Sogang\\2026\\Spring\\Mathematical Economics\\Week 4_2")
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
